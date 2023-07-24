@@ -7,7 +7,7 @@ Router.get('/:num1/:num2', (req, res) => {
   const num2 = parseInt(req.params.num2);
   const resultado = num1 * num2;
   res.send(`
-    A multiplicação de ${num1.toLocaleString()} e ${num2.toLocaleString()} é igual a ${resultado.toLocaleString()}<br>
+    A operação de ${num1.toLocaleString()} * ${num2.toLocaleString()} = ${resultado.toLocaleString()}<br>
     <button style="margin: 1rem 0;" onclick="goToHome()">Página Inicial</button>
       <script>
         function goToHome() {
